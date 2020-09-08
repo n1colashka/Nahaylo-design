@@ -15,6 +15,7 @@ body {
     @include font('aleta');
     color: $accent-dark;
     height: 100%;
+    overflow-x: hidden;
 }
 
 ul {
