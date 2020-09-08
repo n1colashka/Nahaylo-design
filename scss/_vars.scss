@@ -1,0 +1,21 @@
+$accent-dark: #323c48;
+$accent-light: #57b9da;
+
+@mixin font($name) {
+
+    @if $name == 'aleta' {
+        font-family: 'BwAletaNo20-Regular', Arial, Helvetica, sans-serif;
+        font-weight: 400;
+    }
+
+    @if $name == 'aleta-medium' {
+        font-family: 'BwAletaNo20-Medium', Arial, Helvetica, sans-serif;
+        font-weight: 500;
+    }
+
+    @if $name == 'aleta-bold' {
+        font-family: 'BwAletaNo20-Bold', Arial, Helvetica, sans-serif;
+        font-weight: 700;
+    }
+
+}  

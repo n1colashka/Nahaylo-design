@@ -1,0 +1,139 @@
+.plans {
+    padding-bottom: 225px;
+    background: url('../images/exter.png') bottom right no-repeat;
+    text-align: center;
+
+    &__title {
+        @include font('aleta-bold');
+        color: $accent-light;
+        font-size: 53px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 650px;
+    }
+
+    &__item {
+        padding-left: 0;
+        padding-right: 0;
+        height: 620px;
+        padding-top: 75px;
+        padding-bottom: 30px;
+        border: 1px solid #d3d1d1;
+        border-radius: 15px;
+        background-color: #fff;
+        transition: .3s ease;
+
+        &:nth-child(2) {
+            border-right: none;
+            border-left: none;
+        }
+
+        &:hover {
+            box-shadow: 0px 12px 29px -10px rgba(0,0,0,0.46);
+            height: 650px;
+            padding-top: 90px;
+            border: 1px solid #d3d1d1;
+        }
+    }
+
+    &__item--popular {
+        background: url('../images/popular.png') top right no-repeat;
+    }
+}
+
+.plans-list {
+
+    &__head {
+        padding-bottom: 25px;
+    }
+
+    &__img {
+        margin-bottom: 45px;
+    }
+
+    &__title {
+        @include font('aleta-bold');
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    &__subtitle {
+        font-size: 12px;
+    }
+
+    &__content {
+    }
+
+    &__item {
+        font-size: 12px;
+        padding: 10px;
+        &:nth-child(odd) {
+            background-color: #efefef;
+        }
+    }
+
+    &__tooltip {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        display: inline-block;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #c4c6c8;
+        border-radius: 10px;
+        font-size: 10px;
+        color: #c4c6c8;
+        cursor: pointer;
+    }
+
+    &__foot {
+        padding-top: 25px;
+    }
+
+    &__price {
+        display: inline-block;
+        padding-left: 12px;
+        position: relative;
+        font-size: 12px;
+        color: #989a9f;
+
+        &::before {
+            position: absolute;
+            content: "$";
+            font-size: 10px;
+            left: 0;
+            top: 4px;
+        }
+        
+        span {
+            @include font('aleta-bold');
+            font-size: 18px;
+            color: #27272e;
+        }
+    }
+
+    &__price-subtitle {
+        font-size: 10px;
+        margin-bottom: 25px;
+        color: #989a9f;
+    }
+
+    &__btn {
+        border-color: #4349ff;
+        color: #4349ff;
+        padding: 10px 25px;
+        font-size: 12px;
+        transition: .3s ease;
+
+        &:hover {
+            background-color: #4349ff;
+            color: #ffffff;
+        }
+    }
+}

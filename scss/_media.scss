@@ -1,0 +1,349 @@
+@media (max-width: 1200px) {
+    .plans {
+        background-size: 70%;
+    }
+
+    .info {
+        &__inner {
+            background-size: 40%;
+        }
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    .slider {
+        &__container {
+            height: 450px;
+        }
+
+        &__item {
+            width: 500px;
+            height: 350px;
+        }
+
+        .swiper-custom-navigation {
+            max-width: 100%;
+            width: auto;
+            left: 90px;
+            right: 90px;
+        }
+    }
+    
+}
+
+@media (max-width: 991px) {
+    .info {
+        &__img {
+            margin-bottom: 50px;
+        }
+    }
+
+    .footer {
+        text-align: center;
+
+        &__logo {
+            margin-bottom: 30px;
+        }
+    }
+
+}
+@media (max-width: 900px) {
+    .header {
+        &__slider {
+            margin-left: 20px;
+        }
+
+        &__socials {
+            margin-right: 10px;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .header {
+        .navbar-collapse {
+            position: absolute;
+            top: 100px;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+            padding-top: 20px;
+            background-color: $accent-dark;
+        }
+
+        .navbar-nav {
+            padding-left: 40px;
+            padding-bottom: 20px;
+        }
+        
+        .nav-link {
+            color: #fff;
+            padding: 20px 5px;
+            margin-left: 0;
+            &:hover {
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .plans {
+        background: none;
+        padding-bottom: 20px;
+
+        &__title {
+            font-size: 42px;
+        }
+        
+        &__list {
+            margin: 0;
+            height: auto;
+        }
+
+        &__item:not(:last-child) {
+            margin-bottom: 50px;
+        }
+
+        &__item {
+    
+            &:nth-child(2) {
+                border: 1px solid #d3d1d1;
+            }
+        }
+    }
+
+    .slider {
+
+        &__title {
+            font-size: 46px;
+        }
+
+        &__text {
+            font-size: 14px;
+        }
+
+        &__container {
+            height: 500px;
+        }
+
+        &__item {
+            width: auto;
+            height: auto;
+        }
+
+        .swiper-custom-navigation {
+            display: none;
+        }
+    }
+
+    .info {
+        &__inner {
+            background: none;
+            padding-bottom: 60px;
+            padding-top: 30px;
+        }
+
+        &__mobile-head {
+            display: block;
+        }
+
+        &__vertical-title {
+            display: none;
+        }
+
+        &__right {
+            padding-right: 15px;
+        }
+    }
+
+}
+
+@media(max-width: 550px) {
+    .plans {
+        &__title {
+            font-size: 26px;
+        }
+    }
+
+    .info {
+        &__img {
+            display: none;
+        }
+
+        &__title {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        &__form-title {
+            font-size: 14px;
+            text-align: center;
+            color: $accent-light;
+            margin-bottom: 30px;
+        }
+
+        &__form-input {
+            font-size: 9px;
+            text-align: center;
+            padding-bottom: 12px;
+            max-width: 180px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+    
+        &__form-input-label {
+            display: inline-block;
+            font-size: 9px;
+            padding-left: 0;
+            margin-bottom: 0;
+            padding-top: 0;
+        }
+
+        &__comments {
+            text-align: center;
+        }
+
+        &__form-comments {
+            padding: 0;
+        }
+
+        &__btn {
+            margin-top: 20px;
+            width: 100px;
+            margin: 0 auto;
+        }
+
+        &__inner {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+    .contacts {
+        display: flex;
+        justify-content: center;
+
+        &__right {
+            padding-left: 20px;
+        }
+
+        &__item {
+            font-size: 9px;
+            margin-bottom: 15px;
+            padding-left: 10px;
+
+            &:first-child {
+                padding-right: 20px;
+            }
+
+            address {
+                margin-top: 13px;
+            }
+        }
+        
+        &__title {
+
+            i {
+                font-size: 9px;
+            }
+        }
+        
+        &__subtitle {
+            line-height: 20px;
+        }
+    }
+
+    .navbar-toggler {
+        padding: 0;
+    }
+
+    .slider {
+        padding-top: 115px;
+        padding-bottom: 40px;
+
+        &__title {
+            font-size: 27px;
+        }
+
+        &__text {
+            font-size: 11px;
+            margin-bottom: 10px;
+        }
+
+        &__container {
+            height: 390px;
+        }
+
+        &__item {
+            width: auto;
+            height: auto;
+        }
+
+        .swiper-custom-navigation {
+            display: none;
+        }
+    }
+
+    .footer {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        &__copyright {
+            font-size: 9px;
+        }
+        
+        &__box {
+            font-size: 9px;
+            margin-bottom: 15px;
+        }
+    
+        &__box-item {
+            color: #8d8d8d;
+            line-height: 18px;
+        }
+    
+        &__menu {
+            font-size: 9px;
+            display: none;
+        }
+
+        &__menu--mobile {
+            display: block;
+        }
+    
+        &__menu-title {
+            font-size: 9px;
+            margin-bottom: 8px;
+        }
+    
+        &__menu-link {
+            font-size: 9px;
+        }
+
+        &__logo {
+            img {
+                width: 130px;
+            }
+        }
+    }
+
+    .socials {
+        &__link {
+            width: 16px;
+            height: 16px;
+            font-size: 7px;
+        }
+
+        &__item {
+            &:not(:first-child) {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+
+
+
+

@@ -1,0 +1,87 @@
+.slider {
+    text-align: center;
+    padding-top: 180px;
+    padding-bottom: 80px;
+
+    &__title {
+        @include font('aleta-bold');
+        font-size: 74px;
+        margin-bottom: 55px;
+        span {
+            color: $accent-light;
+        }
+    }
+
+    &__text {
+        @include font('aleta');
+        font-size: 15px;
+        margin-bottom: 100px;
+    }
+
+    &__container {
+        height: 550px;
+        width: 100%;
+    }
+
+    &__wrapper {
+        align-items: center;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        transition: .3s ease;
+        width: 640px;
+        height: 430px;
+        opacity: .5;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+
+    // Swiper
+
+    .swiper-slide-active {
+        z-index: 100;
+        opacity: 1;
+        transform: scaleX(2.5) scaleY(1.5);
+
+    }
+
+    .swiper-custom-navigation {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 980px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 55;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .swiper-custom-next,
+    .swiper-custom-prev {
+        
+        background: url('../images/slider-left-arrow.png') center no-repeat;
+        width: 46px;
+        height: 75px;
+        z-index: 30;
+    }
+
+    .swiper-custom-next {
+        left: 33%;
+    }
+
+    .swiper-custom-prev {
+        transform: rotate(180deg);
+        right: 33%;
+    }
+
+}
+
